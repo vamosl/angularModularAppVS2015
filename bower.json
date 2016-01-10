@@ -15,15 +15,17 @@
     "angular-mocks": "~1.2.24"
   },
   "dependencies": {
-    "angular": "~1.2.24",
+    "angular": "~1.4.8",
     "toastr": "~2.0.1",
     "bootstrap": "~3.1.1",
     "moment": "~2.6.0",
     "jquery": "~2.1.0",
-    "angular-route": "~1.2.24",
+    "angular-route": "~1.4.8",
     "angular-animate": "~1.2.24",
     "angular-sanitize": "~1.2.24",
     "font-awesome": "~4.0.3",
     "extras.angular.plus": "~0.9.0"
+	"angular-material": "~0.11.4",
+	"angular-resource": "~1.4.8"
   }
 }
