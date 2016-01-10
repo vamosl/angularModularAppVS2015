@@ -1,0 +1,23 @@
+{
+  "name": "AngularModularApp",
+  "version": "0.0.0",
+  "description": "Empty angular modular app",
+  "main": "server/server.js",
+  "author": {
+    "name": "vamosl",
+    "email": ""
+  },
+  "dependencies": {
+    "app-module-path": "^1.0.5",
+    "bluebird": "^3.0.6",
+    "express": "^4.13.3",
+    "mongoose": "^4.2.9",
+    "ua-parser-js": "^0.7.9",
+	"body-parser": "^1.8.2",
+    "compression": "^1.1.0",
+    "cors": "^2.2.0",
+    "method-override": "^1.0.0",
+    "morgan": "^1.1.1",
+    "serve-favicon": "^2.0.1"
+  }
+}
