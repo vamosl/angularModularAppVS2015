@@ -16,9 +16,14 @@
         var directive = {
             link: link,
             restrict: 'A',
-            scope: {
-                whenDoneAnimating: '&?'
-            }
+            
+            /* 
+             *Multiple directives [ngController, ccSidebar (module: app.widgets)] asking for new/isolated scope on: 
+             *<div data-cc-sidebar="" when-done-animating="vm.sidebarReady()" data-ng-controller="Sidebar as vm">  
+             */
+            //scope: {
+            //    whenDoneAnimating: '&?'
+            //}
         };
         return directive;
 
@@ -32,11 +37,13 @@
                 var dropClass = 'dropy';
                 e.preventDefault();
                 if (!$dropdownElement.hasClass(dropClass)) {
-                    $sidebarInner.slideDown(350, scope.whenDoneAnimating);
+                    //$sidebarInner.slideDown(350, scope.whenDoneAnimating);
+                    $sidebarInner.slideDown(350, attrs.whenDoneAnimating);
                     $dropdownElement.addClass(dropClass);
                 } else if ($dropdownElement.hasClass(dropClass)) {
                     $dropdownElement.removeClass(dropClass);
-                    $sidebarInner.slideUp(350, scope.whenDoneAnimating);
+                    //$sidebarInner.slideUp(350, scope.whenDoneAnimating);
+                    $sidebarInner.slideDown(350, attrs.whenDoneAnimating);
                 }
             }
         }
